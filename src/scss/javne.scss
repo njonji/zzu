@@ -1,0 +1,31 @@
+#javne {
+    margin: 20rem 2rem;
+}
+
+.javne {
+
+    
+     
+    &__desna {
+        display: flex;
+        flex-direction: column;
+    }
+    &__img {
+        width: 50rem;
+        height: auto;
+    }
+
+    &__text {
+        margin-top: 8rem;
+        font-size: 1.6rem;
+        text-align: justify;
+    }
+
+    &__btn {
+      
+       margin-top: 5rem;
+       align-self: center;
+       width: 45%;
+       text-align: center;
+    }
+}

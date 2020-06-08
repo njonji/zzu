@@ -1,0 +1,80 @@
+.call {
+    background:linear-gradient(to right,rgba(19, 63, 130,1), rgba(19, 63, 130,.4)), url("/assets/images/call.jpg")center/cover fixed no-repeat;
+    width: 100%;
+    height: 300px;
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    @media screen and (max-width: 900px) { 
+        height: 350px;
+      }
+
+    &__viber {
+        text-align: center;
+        margin-left: 25rem;
+        @media screen and (max-width: 1035px) { 
+           margin-left: 35rem;
+         }
+         @media screen and (max-width: 900px) { 
+            margin-left: 0rem;
+          }
+
+
+        &--text {
+            color:#fff;
+            font-size: 2.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            @media screen and (max-width: 1035px) { 
+                font-size: 2.4rem;
+             }
+        }
+    }
+
+    &__contactBox {
+        background:linear-gradient(rgba(19, 63, 130,.6), rgba(19, 63, 130,1)), url("/assets/images/env.png")center no-repeat;
+        position: absolute;
+        border-radius: .5rem;
+        top: 6rem;
+        left: 10rem;
+        width: 30rem;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        padding: 2rem;
+
+        @media screen and (max-width: 1200px) { 
+
+           left: 3rem;
+        }
+
+        @media screen and (max-width: 900px) { 
+            top:26rem;
+            left:50%;
+            transform: translateX(-50%);
+            background:linear-gradient(rgba(19, 63, 130,.1), rgba(19, 63, 130,.3)), url("/assets/images/env.png")center no-repeat;
+            border-radius: 1rem;
+          }
+        &--text {
+            color:#fff;
+            font-size: 2.5rem;
+            font-weight: bold;
+            @media screen and (max-width: 1035px) { 
+                font-size: 2.4rem;
+             }
+        
+        }
+    }
+
+    &__contactBtn:hover {
+        background: #43BC9D !important;
+    }
+}
+
+
+
+
