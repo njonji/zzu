@@ -14,11 +14,43 @@
     color: #fff;
     font-size: 5rem;
     font-weight: bold;
+
+   
+}
+
+
+@media screen and (max-width: 850px) {
+    .landing__h1 { 
+   font-size: 4rem;
+   margin: 0 1rem;
+    }
+}
+@media screen and (max-width: 460px) {
+    .landing__h1 { 
+   font-size: 3.4rem;
+  
+    }
 }
 .landing__h3 {
     color: #fff;
     font-size: 3rem;
     font-weight: bold;
+  
+}
+
+@media screen and (max-width: 850px) {
+    .landing__h3 { 
+   font-size: 2.5rem;
+   margin: 0 1rem;
+    } 
+
+}
+
+@media screen and (max-width: 460px) {
+    .landing__h3 { 
+   font-size: 2rem;
+  
+    }
 }
 .landing__btn {
     margin-top: 3rem;
