@@ -3,27 +3,32 @@
 }
 
 .javne {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
      
     &__desna {
         display: flex;
         flex-direction: column;
+     
     }
     &__img {
-        width: 50rem;
+        width: 25rem;
         height: auto;
+
     }
 
     &__text {
-        margin-top: 8rem;
+        margin-top: 2rem;
         font-size: 1.6rem;
         text-align: justify;
     }
 
     &__btn {
       
-       margin-top: 5rem;
+       margin-top: 2rem;
        align-self: center;
        width: 45%;
        text-align: center;

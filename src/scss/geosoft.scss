@@ -29,6 +29,10 @@
       
     }
 
+    &--container {
+        padding: 0;
+    }
+
 }
 .geoSection__title:hover {
     color: $primaryC;
