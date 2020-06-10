@@ -4,6 +4,7 @@ import "./main.scss"
 
 
 
+
 const menuIcons = document.querySelectorAll('.menu-icons');
 const navbar = document.querySelector('.navbar');
 
