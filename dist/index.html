@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet"> 
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
   <link rel="stylesheet" href="assets/main.css" >
   <title>MD Studio</title>
 </head>
@@ -15,9 +17,15 @@
       <img class="logo" src="/assets/images/logo.png" alt="Logo">
     </a>
 
-    <a href="">
-      <img class="viber" src="/assets/images/viber.png" alt="Viber Image">
-    </a>
+     
+      <form action="#" class="navbar-search visible-lg" onSubmit="return false;">
+        <input type="text" name="keywords" maxlength="100" placeholder="Pretraga" onClick="return false;" class="searchInput">
+        <a type="submit"><i class="fas fa-search searchIcon"></i></a>
+     </form>
+
+    <!--   <img class="viber" src="/assets/images/viber.png" alt="Viber Image"> -->
+ 
+    
   </div>
 <div class="kontainer">
   <nav class="navbar">
@@ -116,6 +124,14 @@
       <li class="main-li">
         <a href="#">Kontakt</a>
       </li>
+      <li class="main-li">
+        <select name="language-picker-select" id="language-picker-select" class="langSelect">
+          <option lang="de" value="deutsch" class="langSelect__option">BS</option>
+          <option lang="en" value="english" class="langSelect__option">EN</option>
+
+          <!-- other language options -->
+        </select>
+      </li>
     </ul>
   </nav>
 </div>
@@ -124,33 +140,49 @@
 
 <section id="landing">
     
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="landing landing--1">
-          <h1 class="landing__h1">Javna Ustanova <br> Zavod za prostorno uređenje Bihać</h1>
-          <h3 class="landing__h3">Unsko-sanski kanton - Bosna i Hercegovina</h3>
-          <a href="#" class="landing__btn myBtn">Više o nama</a>
-     </div>
+
+ 
+
+
+     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="landing landing--1">
+            <h1 class="landing__h1 animate__animated animate__fadeInRight" style="animation-delay: .2s;">Javna Ustanova <br> Zavod za prostorno uređenje Bihać</h1>
+            <h3 class="landing__h3 animate__animated animate__fadeInLeft" style="animation-delay: .6s;">Unsko-sanski kanton - Bosna i Hercegovina</h3>
+            <a href="#" class="landing__btn myBtn animate__animated animate__fadeInUp" style="animation-delay: 1s;">Više o nama</a>
+       </div>
+        </div>
+        <div class="carousel-item">
+          <div class="landing landing--2">
+            <h1 class="landing__h1 animate__animated animate__fadeInRight" style="animation-delay: .2s;">Javna Ustanova <br> Zavod za prostorno uređenje Bihać</h1>
+            <h3 class="landing__h3 animate__animated animate__fadeInLeft" style="animation-delay: .6s;">Unsko-sanski kanton - Bosna i Hercegovina</h3 >
+            <a href="#" class="landing__btn myBtn animate__animated animate__fadeInUp" style="animation-delay: 1s;">Naši Projekti</a >
+       </div>
+        </div>
+        <div class="carousel-item">
+          <div class="landing landing--3 " >
+            <h1 class="landing__h1 animate__animated animate__fadeInRight" style="animation-delay: .2s;">Javna Ustanova <br> Zavod za prostorno uređenje Bihać</h1 >
+            <h3 class="landing__h3 animate__animated animate__fadeInLeft" style="animation-delay: .6s;">Unsko-sanski kanton - Bosna i Hercegovina</h3 >
+            <a href="#" class="landing__btn myBtn animate__animated animate__fadeInUp" style="animation-delay: 1s;">Javne Nabavke</a >
+       </div>
+        </div>
+  
       </div>
-      <div class="carousel-item">
-        <div class="landing landing--2">
-          <h1 class="landing__h1">Javna Ustanova <br> Zavod za prostorno uređenje Bihać</h1>
-          <h3 class="landing__h3">Unsko-sanski kanton - Bosna i Hercegovina</h3>
-          <a href="#" class="landing__btn myBtn">Naši Projekti</a>
-     </div>
-      </div>
-      <div class="carousel-item">
-        <div class="landing landing--3">
-          <h1 class="landing__h1">Javna Ustanova <br> Zavod za prostorno uređenje Bihać</h1>
-          <h3 class="landing__h3">Unsko-sanski kanton - Bosna i Hercegovina</h3>
-          <a href="#" class="landing__btn myBtn">Javne Nabavke</a>
-     </div>
-      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-  </div>
-
-
   
 </section>
 
@@ -172,7 +204,7 @@
      <div class="row geoSection__row" style="margin: 0 1rem;">
        
           <div class="col-md-6 vijesti__feat">
-             <h2 class="vijesti__feat--title"> <a href="#" class="vijesti__feat--link">Zavod za prostorno uređenje Bihać realizirao je jučer projekat asfaltiranja ulice Voćarske...</a></h2>
+             <h2 class="vijesti__feat--title"> <a href="#" class="vijesti__feat--link"> Jučer je realiziran projekat asfaltiranja ulice Voćarske...</a></h2>
           </div>
 
           <div class="col-md-6 vijesti__kockice">
@@ -181,7 +213,7 @@
               <a href="#">
                <div class="vijesti__kockice--image vijesti__kockice--image--1"></div>
                <p class="vijesti__kockice--desc vijesti__kockice--top ">
-                Dana 08.10.2019 godine realizirani su projekti izgradnje trotoara u ulicama Husrefa Redzica...
+                Dana 08.10.2019 godine realizirani su projekti izgradnje trotoara...
                </p>
               </a>
              </div>
@@ -189,7 +221,7 @@
               <a href="#">
               <div class="vijesti__kockice--image vijesti__kockice--image--2"></div>
               <p class="vijesti__kockice--desc vijesti__kockice--top">
-                Započele su aktivnosti na restauraciji skulpture "Djevojka sa Une" koja će danas biti transportovana...
+                Započele su aktivnosti na restauraciji skulpture "Djevojka sa Une" ...
               </p>
               </a>
              </div>
@@ -199,7 +231,7 @@
                <a href="#">
               <div class="vijesti__kockice--image vijesti__kockice--image--3"></div>
               <p class="vijesti__kockice--desc">
-                Na veliku radost lokalnih rekreativaca danas je u Boricima postavljeno 6 sprava za vjezbanje...
+                Na veliku radost lokalnih rekreativaca danas je u Boricima...
               </p>
             </a>
              </div>
@@ -207,7 +239,7 @@
               <a href="#">
               <div class="vijesti__kockice--image vijesti__kockice--image--4"></div>
               <p class="vijesti__kockice--desc">
-                Građani Bihaća odsad mogu svoje prijedloge, zamjerke i zapažanja vezana uz  gradsku infrastrukturu..
+                Građani Bihaća odsad mogu svoje prijedloge...
               </p>
               </a>
              </div>
@@ -411,33 +443,47 @@
  </div>
 </section>
 
-
+<!-- 
 <section id="javne">
   
        <div class="geosection">
          <div class="kontainer">
           <div class="row geoSection__row">
-            <div class="col-6  geoSection__title--container">
+            <div class="col-12  geoSection__title--container">
              
-                <h2 class="geoSection__title"> <a class="geoSection__title" href="">Javne Nabavke  </a></h2>
+                <h2 class="geoSection__title"> <a class="geoSection__title javne__title" href="">Javne Nabavke  <span>Komunalne Naknade</span></a></h2>
 
               <div class="underline"></div>
             </div>
           </div>
             <div class="row">
-           <div class="col-6 col-md-6 javne">
+           <div class="col-12 col-md-6 javne">
               <img src="/assets/images/cart.jpg" alt="Image of Shoping Cart" class="javne__img">
               <p class="javne__text">
             
                 Kliknom na dugme ispod možete vidjeti plan javnih nabavki JU Prostorno uređenje Bihać, kao i osnovne elemente 
                 ugovora, odluke o dodjeli ugovora i više.
               </p>
-              <a href="#" class="myBtn javne__btn"> Više o Javnim Nabavkama</a>
+              <a href="#" class="myBtn javne__btn"> Više o Nabavkama</a>
   
             </div>
 
-           <div class="col-6 col-md-6 javne__desna">
+           <div class="col-12 col-md-6 javne__desna">
+            <div class="row geoSection__row javne__desna--title">
+              <div class="col-12  geoSection__title--container">
+               
+                  <h2 class="geoSection__title"> <a class="geoSection__title javne__title" href="">Javne Nabavke  <span class="javne__title--span">Komunalne Naknade</span></a></h2>
+  
+                <div class="underline"></div>
+              </div>
+            </div>
+            <img src="/assets/images/komunalna.png" alt="Image of Shoping Cart" class="javne__img javne__img--kom">
+            <p class="javne__text">
+          
+              Kliknom na dugme ispod možete vidjeti sve informacije, obrazce i legislativu vezanu za komunalne naknade JU Prostorno uređenje Bihać.
            
+            </p>
+            <a href="#" class="myBtn javne__btn"> Više o Naknadama</a>
            
             </div>
             </div>
@@ -446,15 +492,40 @@
 
          </div>
        </div>  
+</section> -->
+
+<section id="javne" class="javne">
+
+  <div class="javne__lijeva">
+      <h2 class="javne__lijeva--title">Javne Nabavke</h2>
+      <img src="/assets/images/cart.jpg" alt="Image of Shoping Cart" class="javne__lijeva--img">
+      <p class="javne__lijeva--text">
+            
+        Kliknom na dugme ispod možete vidjeti plan javnih nabavki JU Prostorno uređenje Bihać, kao i osnovne elemente 
+        ugovora, odluke o dodjeli ugovora i više.
+      </p>
+      <a href="#" class="myBtn javne__lijeva--btn"> Više o Nabavkama</a>
+  </div>
+  <div class="javne__desna">
+    <h2 class="javne__desna--title">Komunalne Naknade</h2>
+    <img src="/assets/images/komunalna.png" alt="Image of Shoping Cart" class="javne__img javne__desna--img">
+    <p class="javne__desna--text">
+          
+      Kliknom na dugme ispod možete vidjeti sve informacije, obrazce i legislativu vezanu za komunalne naknade JU Prostorno uređenje Bihać.
+   
+    </p>
+    <a href="#" class="myBtn javne__desna--btn"> Više o Naknadama</a>
+  </div>
+
 </section>
 
 <footer class="main-footer">
   <div class="container">
     <div class="row first-footer">
-      <div class="col-xs-6  col-sm-6  col-md-3" data-mh="list"  style="text-align: center;">
+      <div class="col-xs-6  col-sm-6  col-md-3 footerBox" data-mh="list"  style="text-align: center;">
         <a href="#" class="footer-logo"><img class="footer-logo--img"src="/assets/images/logo.png" alt="SERDA"></a>
       </div>
-      <div class="col-xs-6  col-sm-6 col-md-3" data-mh="list"  style="text-align: center;">
+      <div class="col-xs-6  col-sm-6 col-md-3 footerBox" data-mh="list"  style="text-align: center;">
         <h2 class="footer-title">JU ZZPU - BIHAĆ</h2>
      
         <ul class="footer-ul">
@@ -467,19 +538,17 @@
         </ul>
       </div>
 
-      <div class="col-xs-6  col-sm-6 col-md-3" data-mh="list" style="text-align: center;" >
-        <h2 class="footer-title">Projekti</h2>
+      <div class="col-xs-6  col-sm-6 col-md-3 footerBox" data-mh="list" style="text-align: center;" >
+        <h2 class="footer-title">Vijesti</h2>
         <ul class="footer-ul">
-          <li><a class="footer-link" href="#">Projekt 1</a></li>
-          <li><a class="footer-link" href="#">Projekt 2</a></li>
-          <li><a class="footer-link" href="#">Projekt 3</a></li>
-          <li><a class="footer-link" href="#">Projekt 4</a></li>
-          <li><a class="footer-link" href="#">Projekt 5</a></li>
-    
+          <li><a class="footer-link" href="#">Vijest 1</a></li>
+          <li><a class="footer-link" href="#">Vijest 2</a></li>
+          <li><a class="footer-link" href="#">Vijest 3</a></li>
+
         </ul>
       </div>
 
-      <div class="col-xs-6  col-sm-6 col-md-3" data-mh="list" style="text-align: center;">
+      <div class="col-xs-6  col-sm-6 col-md-3 footerBox" data-mh="list" style="text-align: center;">
         <h2 class="footer-title">O nama</h2>
         <p class="footer-text">JU «Zavod za prostorno uređenje» Bihać osnovan je Odlukom o osnivanju Općinskog vijeća Općine Bihać 
           („ Službeni glasnik  općine  Bihać“, br: 14/05, 4/06, 14/11, 8/12, 2/14 i „Službeni glasnik grada Bihaća“, 
@@ -497,7 +566,7 @@
       <span class="copyright--span">Copyright © 2020. JUZZPU - BIHAĆ </span>
     </div>
     <div class="col-sm-6">
-      <span class="copyright--span">Dizajn i programiranje: <a class="copyright--link" target="_blank" href="https://geosoft-studio.com">Geosoft-Studio</a></span>
+      <span class="copyright--span">Programiranje: <a class="copyright--link" target="_blank" href="https://geosoft-studio.com">Geosoft-Studio</a></span>
     </div>
   </div>
 </footer>
@@ -512,8 +581,6 @@
 
 
 
-  <script src="assets/jquery-3.4.1.min.js"></script>
-  <script src="assets/bootstrap.min.js"></script>
   <script src="assets/bundle.js"></script>
 
 

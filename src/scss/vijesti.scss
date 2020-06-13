@@ -38,6 +38,12 @@
             min-height: 20rem;
            width: 80%;
 
+           @media screen and (max-width: 450px) {
+            height: 25rem;
+            max-height: 25rem;
+            min-height: 25rem;
+           }
+
 
            &:hover .vijesti__kockice--desc {
             color: #194E87;
@@ -79,6 +85,10 @@
 
 
           text-align: center;
+          @media screen and (max-width: 450px) {
+            height: 10rem;
+          
+           }
           
         }
 

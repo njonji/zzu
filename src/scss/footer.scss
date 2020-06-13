@@ -14,10 +14,22 @@
 
 .footer-ul {
     padding: 0;
+
 }
+
+.footerBox {
+    @media screen and (max-width: 575px) {
+                  
+          
+        margin-top: 2rem;
+     }
+}
+
 
 .footer-ul li {
     font-size: 1.6rem;
+
+
 
 }
 

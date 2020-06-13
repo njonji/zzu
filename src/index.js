@@ -1,5 +1,6 @@
 import "jquery"
 import "popper.js"
+import "bootstrap"
 import "./main.scss"
 
 
@@ -11,4 +12,6 @@ const navbar = document.querySelector('.navbar');
 menuIcons.forEach(icon => icon.addEventListener('click', () => {
     navbar.classList.toggle('active');
 }))
+
+
 
