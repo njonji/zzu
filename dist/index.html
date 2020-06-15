@@ -6,7 +6,8 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet"> 
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="assets/main.css" >
   <title>MD Studio</title>
 </head>
@@ -251,90 +252,45 @@
 </div>
 </section>
 
-<section id="projekti">
-
-      <div class="geoSection">
+<section id="naknada">
+  <div class="geoSection">
+    <div class="kontainer">
+      <div class="row geoSection__row">
+        <div class="col-12  geoSection__title--container">
+             
+            <h2 class="geoSection__title"> <a class="geoSection__title" href=""> Komunalna Naknada </a></h2>
+           
         
-
-          <div class="kontainer">
-            <div class="row geoSection__row">
-              <div class="col-12  geoSection__title--container">
-                   
-                 <div class="geoSection__flex">
-                  <h2 class="geoSection__title"> <a class="geoSection__title" href="">Realizovani Projekti  </a></h2>
-                  <a class="geoSection__title geoSection__title--h4" href="">Svi Projekti  </a>
-                 </div>
-                 
-
-                <div class="underline"></div>
-              </div>
-            </div>
-            <div class="row">
-             <!--  CARD START -->
-               <div class="col-md-6 col-lg-3 geoSection__wrapperCard">
-                <a href="">
-                 <div class="geoSection__card">
-                    <div class="geoSection__card--head">
-                      <p class="geoSection__card--date">02.06.2020</p>
-                    </div>
-                    <div class="geoSection__card--body">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni praesentium officia, ducimus ?</p>
-                      <i class="icon ion-md-arrow-right"></i>
-                    </div>
-                 </div>
-                </a>
-               </div>
-           <!-- CARD END -->
-             <!--  CARD START -->
-               <div class="col-md-6 col-lg-3 geoSection__wrapperCard">
-                <a href="">
-                 <div class="geoSection__card">
-                    <div class="geoSection__card--head">
-                      <p class="geoSection__card--date">02.06.2020</p>
-                    </div>
-                    <div class="geoSection__card--body">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni praesentium officia, ducimus ?</p>
-                    </div>
-                 </div>
-                </a>
-               </div>
-           <!-- CARD END -->
-             <!--  CARD START -->
-               <div class="col-md-6 col-lg-3 geoSection__wrapperCard">
-                <a href="">
-                 <div class="geoSection__card">
-                    <div class="geoSection__card--head">
-                      <p class="geoSection__card--date">02.06.2020</p>
-                    </div>
-                    <div class="geoSection__card--body">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni praesentium officia, ducimus ?</p>
-                    </div>
-                 </div>
-                </a>
-               </div>
-           <!-- CARD END -->
-             <!--  CARD START -->
-               <div class="col-md-6 col-lg-3 geoSection__wrapperCard">
-                <a href="">
-                 <div class="geoSection__card">
-                    <div class="geoSection__card--head">
-                      <p class="geoSection__card--date">02.06.2020</p>
-                    </div>
-                    <div class="geoSection__card--body">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni praesentium officia, ducimus ?</p>
-                    </div>
-                 </div>
-                </a>
-               </div>
-           <!-- CARD END -->
-         
-            </div>
+           <div class="underline"></div>
+        </div>
+      </div>
+     <div class="row geoSection__row" style="margin: 0 1rem;">
+       
+          <div class="col-md-6 naknada__lijeva">
+             <p class="naknada__lijeva--podnaslov">Informacije, obrasci, legislativa.</p>
+             <div class="naknada__lijeva--ikone" >
+              <a href="#" class="naknada__lijeva--link">
+                <i class="fas fa-users naknada__lijeva--lica"></i>
+                <p class="naknada__lijeva--text"> Pravna Lica</p>
+               </a>
+               <a href="" class="naknada__lijeva--link">
+                <i class="fas fa-user naknada__lijeva--lica"></i>
+                <p class="naknada__lijeva--text"> Fizička Lica</p>
+               </a>
+             </div>
+      
+            
           </div>
 
+          <div class="col-md-6 naknada__desna">
+            <a class="weatherwidget-io" href="https://forecast7.com/hr/44d8115d87/bihac/" data-label_1="BIHAĆ" data-label_2="WEATHER" data-theme="original" >BIHAĆ WEATHER</a>
+            <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+            </script>
+        </div>
 
-      </div>
-
-
+    </div>
+</div>
 </section>
 
 <section id="realizacija">
@@ -354,9 +310,9 @@
             <div class="underline"></div>
           </div>
         </div>
-        <div class="row">
+        <div class="row owl-carousel">
          <!--  CARD START -->
-           <div class="col-md-6 col-lg-3 geoSection__wrapperCard">
+           <div class=" geoSection__wrapperCard">
             <a href="">
              <div class="geoSection__card">
                 <div class="geoSection__card--head">
@@ -371,7 +327,7 @@
            </div>
        <!-- CARD END -->
          <!--  CARD START -->
-           <div class="col-md-6 col-lg-3 geoSection__wrapperCard">
+           <div class=" geoSection__wrapperCard">
             <a href="">
              <div class="geoSection__card">
                 <div class="geoSection__card--head">
@@ -385,7 +341,7 @@
            </div>
        <!-- CARD END -->
          <!--  CARD START -->
-           <div class="col-md-6 col-lg-3 geoSection__wrapperCard">
+           <div class=" geoSection__wrapperCard">
             <a href="">
              <div class="geoSection__card">
                 <div class="geoSection__card--head">
@@ -399,7 +355,35 @@
            </div>
        <!-- CARD END -->
          <!--  CARD START -->
-           <div class="col-md-6 col-lg-3 geoSection__wrapperCard">
+           <div class=" geoSection__wrapperCard">
+            <a href="">
+             <div class="geoSection__card">
+                <div class="geoSection__card--head">
+                  <p class="geoSection__card--date">02.06.2020</p>
+                </div>
+                <div class="geoSection__card--body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni praesentium officia, ducimus ?</p>
+                </div>
+             </div>
+            </a>
+           </div>
+       <!-- CARD END -->
+         <!--  CARD START -->
+           <div class=" geoSection__wrapperCard">
+            <a href="">
+             <div class="geoSection__card">
+                <div class="geoSection__card--head">
+                  <p class="geoSection__card--date">02.06.2020</p>
+                </div>
+                <div class="geoSection__card--body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni praesentium officia, ducimus ?</p>
+                </div>
+             </div>
+            </a>
+           </div>
+       <!-- CARD END -->
+         <!--  CARD START -->
+           <div class=" geoSection__wrapperCard">
             <a href="">
              <div class="geoSection__card">
                 <div class="geoSection__card--head">
@@ -414,6 +398,7 @@
        <!-- CARD END -->
      
         </div>
+       
       </div>
 
 
@@ -425,11 +410,17 @@
 
 <section id="callToAction">
  <div class="call">
-      <div class="call__contactBox">
+      <div class="call__contactBox call__contactBox--1">
         <p class="call__contactBox--text">
           Želite uložiti pritužbu, prijedlog ili pohvalu?
         </p>
         <a href="#" class="myBtn call__contactBtn">Kontaktirajte Nas!</a>
+      </div>
+      <div class="call__contactBox call__contactBox--2">
+        <p class="call__contactBox--text">
+          Često postavljenja pitanja / FAQ !
+        </p>
+        <a href="#" class="myBtn call__contactBtn">Idi na pitanja!</a>
       </div>
       <div class="call__viber">
         <p class="call__viber--text">
@@ -494,31 +485,77 @@
        </div>  
 </section> -->
 
-<section id="javne" class="javne">
-
-  <div class="javne__lijeva">
-      <h2 class="javne__lijeva--title">Javne Nabavke</h2>
-      <img src="/assets/images/cart.jpg" alt="Image of Shoping Cart" class="javne__lijeva--img">
-      <p class="javne__lijeva--text">
-            
-        Kliknom na dugme ispod možete vidjeti plan javnih nabavki JU Prostorno uređenje Bihać, kao i osnovne elemente 
-        ugovora, odluke o dodjeli ugovora i više.
-      </p>
-      <a href="#" class="myBtn javne__lijeva--btn"> Više o Nabavkama</a>
+<section id="javne" >
+  <div class="kontainer">
+  <div class="row geoSection__row">
+    <div class="col-12  geoSection__title--container" >
+         
+        <h2 class="geoSection__title"> <a class="geoSection__title" href=""> Javna Nabavka </a></h2>
+       
+    
+       <div class="underline"></div>
+    </div>
   </div>
-  <div class="javne__desna">
-    <h2 class="javne__desna--title">Komunalne Naknade</h2>
-    <img src="/assets/images/komunalna.png" alt="Image of Shoping Cart" class="javne__img javne__desna--img">
-    <p class="javne__desna--text">
-          
-      Kliknom na dugme ispod možete vidjeti sve informacije, obrazce i legislativu vezanu za komunalne naknade JU Prostorno uređenje Bihać.
-   
-    </p>
-    <a href="#" class="myBtn javne__desna--btn"> Više o Naknadama</a>
+  <div class="accordions">
+    <div class="accordion-item">
+      <div class="accordion-title" data-tab="item1">
+        <h2>Plan Javni Nabavki <i class="fas fa-chevron-down"></i></h2>
+      </div>
+      <div class="accordion-content" id="item1">
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
+  
+    <div class="accordion-item">
+      <div class="accordion-title" data-tab="item2">
+        <h2>Osnovni elementi ugovora<i class="fas fa-chevron-down"></i></h2>
+      </div>
+      <div class="accordion-content" id="item2">
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
+  
+    <div class="accordion-item">
+      <div class="accordion-title" data-tab="item3">
+        <h2>Obavještenje<i class="fas fa-chevron-down"></i></h2>
+      </div>
+      <div class="accordion-content" id="item3">
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-title" data-tab="item3">
+        <h2>Odluka o dodjeli ugovora<i class="fas fa-chevron-down"></i></h2>
+      </div>
+      <div class="accordion-content" id="item3">
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-title" data-tab="item3">
+        <h2>Poništeni Postupci<i class="fas fa-chevron-down"></i></h2>
+      </div>
+      <div class="accordion-content" id="item3">
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
   </div>
+  
+  
+</div>
 
 </section>
-
+<iframe style="border-top: 5px solid #43BC9D;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.481083771236!2d15.868204784844998!3d44.8117629878981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4761406c9d8f4e5f%3A0x98b5a714808fcada!2sUlica%20502.%20vite%C5%A1ke%20brdske%20brigade%207%2C%20Biha%C4%87%2077000!5e0!3m2!1sbs!2sba!4v1592235180596!5m2!1sbs!2sba" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 <footer class="main-footer">
   <div class="container">
     <div class="row first-footer">
@@ -581,7 +618,48 @@
 
 
 
+
   <script src="assets/bundle.js"></script>
+  <script src="assets/owl.carousel.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+
+});
+</script>
+
+<script>
+
+$(document).ready(function(){
+    $(".accordion-title").click(function(e){
+        var accordionitem = $(this).attr("data-tab");
+        $("#"+accordionitem).slideToggle().parent().siblings().find(".accordion-content").slideUp();
+
+        $(this).toggleClass("active-title");
+        $("#"+accordionitem).parent().siblings().find(".accordion-title").removeClass("active-title");
+
+        $("i.fa-chevron-down",this).toggleClass("chevron-top");
+        $("#"+accordionitem).parent().siblings().find(".accordion-title i.fa-chevron-down").removeClass("chevron-top");
+    });
+    
+});
+</script>
 
 
 

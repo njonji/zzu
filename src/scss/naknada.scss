@@ -1,0 +1,68 @@
+.naknada {
+
+    &__lijeva {
+           
+        &--podnaslov {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-align: center;
+            color:#003F82;
+        }
+
+        &--ikone {
+           display: flex;
+           justify-content: space-between;
+           margin: 2rem 10rem;
+           @media screen and (max-width: 940px) {
+            margin: 2rem 3rem;
+           }
+           @media screen and (max-width: 767px) {
+            margin: 2rem 12rem;
+           }
+           @media screen and (max-width: 525px) {
+            margin: 2rem 2rem;
+           }
+        }
+
+        &--link {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+          
+
+            &:hover {
+                text-decoration: none;
+
+            }
+            &:hover .naknada__lijeva--lica  {
+              color:#43BC9D;
+            }
+            &:hover .naknada__lijeva--text {
+              color:#43BC9D;
+            }
+        }
+    
+
+        &--lica {
+            font-size: 4rem;
+            color:#003F82;
+            margin: 1rem 0;
+            transition: all .3s ease-in-out;
+          
+        }
+
+        &--text {
+            color:#003F82;
+            font-size: 1.6rem;
+            transition: all .3s ease-in-out;
+        }
+    }
+
+    &__desna {
+
+    }
+}
+
+

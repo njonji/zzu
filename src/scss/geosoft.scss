@@ -40,7 +40,7 @@
 
 .geoSection__card {
     background:#43BC9D;
-    border-top: 4px solid #194E87;;
+    border-top: 4px solid #194E87;
     padding:1rem;
     color:#FFF;
     font-size: 1.6rem;
@@ -64,4 +64,17 @@
     background: #194E87;
 
     box-shadow: 0 2rem 4.5rem rgba(#000, .40);
+}
+
+.owl-nav {
+    font-size: 6rem;
+    color: #194E87;
+    text-align: center;
+}
+
+.owl-prev {
+    outline: none !important;
+}
+.owl-next {
+    outline: none !important;
 }
