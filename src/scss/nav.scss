@@ -22,6 +22,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &__icons {
+        color:#43BC9D;
+        font-size: 2.5rem;
+        text-align: center;
+
+        &--icon {
+            margin: 0 3px;
+            text-decoration: none;
+            color:#43BC9D;
+            transition: all .3s ease;
+        }
+        &--icon:hover {
+          
+            color:#003F82;
+        }
+    }
 }
 
 .viber {
@@ -78,7 +95,7 @@ nav {
 
 
 .logo {
-   width: 7rem;
+   width: 10rem;
    height: auto;
    margin: 0 1rem;
 }
