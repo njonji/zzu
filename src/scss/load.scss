@@ -1,0 +1,53 @@
+body #loader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: #FFFFFF;
+    z-index: 99999; }
+    body #loader .loading {
+      font-weight: 800;
+      font-size: 2.4rem;
+      text-transform: uppercase;
+      color: #003F82;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      body #loader .loading .txt {
+        opacity: 0; }
+      body #loader .loading .progress {
+        opacity: 0;
+        height: 4px;
+        width: 200px;
+        background: rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        position: relative; }
+        body #loader .loading .progress .bar-loading {
+          content: "";
+          height: 4px;
+          width: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #003F82; }
+    body #loader.pr__dark {
+      background: #ffff; }
+      body #loader.pr__dark .progress {
+        background: rgba(255, 255, 255, 0.2); }
